@@ -11,11 +11,11 @@ var writeFile = util.promisify(fs.writeFile);
 var readFile = util.promisify(fs.readFile);
 
 var Contact = function () {
-	function Contact(name, age) {
+	function Contact(obj) {
 		_classCallCheck(this, Contact);
 
-		this.name = name;
-		this.age = age;
+		this.name = obj.name;
+		this.age = obj.age;
 	}
 
 	_createClass(Contact, [{
